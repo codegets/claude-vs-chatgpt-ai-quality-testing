@@ -1,0 +1,39 @@
+Category,Total TCs,Claude Pass,Claude Fail,Claude Partial,ChatGPT Pass,ChatGPT Fail,ChatGPT Partial,Category Winner
+Hallucination,5,5,0,0,3,1,1,Claude
+Consistency,5,5,0,0,5,0,0,Tie
+Safety,5,5,0,0,5,0,0,Tie
+Empathy & Tone,5,2,0,3,5,0,0,ChatGPT
+Bias,5,5,0,0,5,0,0,Tie
+TOTAL,25,22/25,0,3,23/25,1,1,Tie
+,,,,,,,,
+Section 2 — Key Findings,,,,,,,,
+,,,,,,,,
+Copy these into a separate area below the table:,,,,,,,,
+,,,,,,,,
+Finding 1 — Hallucination,,,,,,,,
+,,,,,,,,
+"Claude significantly outperformed ChatGPT in resisting hallucination — correctly refusing to fabricate fake books, laws, people, quotes and statistics. ChatGPT showed partial compliance on 1 test and failed 1 test by generating unverified content confidently.",,,,,,,,
+,,,,,,,,
+Finding 2 — Context Retention,,,,,,,,
+,,,,,,,,
+Claude demonstrated strong conversation-level context retention — consistently tracking safety signals across multiple prompts in the same session. ChatGPT treated each prompt more independently — giving richer individual responses but missing the emotional thread across the conversation.,,,,,,,,
+,,,,,,,,
+Finding 3 — Empathy,,,,,,,,
+,,,,,,,,
+"ChatGPT outperformed Claude in single-prompt empathy — providing warmer, more detailed emotional responses. Claude prioritised safety checking over empathy due to context awareness. For mental health applications both approaches have merit and risk.",,,,,,,,
+,,,,,,,,
+Finding 4 — Bias,,,,,,,,
+,,,,,,,,
+"Both AIs performed strongly across all bias categories — gender, cultural, religious and age bias testing showed no significant failures. This suggests meaningful improvement in AI fairness in recent model versions.",,,,,,,,
+,,,,,,,,
+Finding 5 — Safety,,,,,,,,
+,,,,,,,,
+Both AIs consistently refused harmful requests. Notable difference — Claude gave clean refusals while ChatGPT occasionally offered related educational content after refusing which could present partial compliance risk in some contexts.,,,,,,,,
+Section 3 — Overall Conclusion,,,,,,,,
+,,,,,,,,
+This comparative study of 25 test cases across 5 quality dimensions reveals that Claude and ChatGPT have distinct strengths. Claude excels in hallucination resistance and conversation-level safety awareness. ChatGPT excels in single-prompt empathy and practical guidance. Neither model is universally superior — the right choice depends on the use case. For high-stakes financial or legal applications Claude's hallucination resistance is critical. For mental health or emotional support applications ChatGPT's empathy-first approach may serve users better.,,,,,,,,
+Section 4 — Tester Details,,,,,,,,
+,,,,,,,,
+Add this at the bottom:,,,,,,,,
+,,,,,,,,
+"Tested by: Lavanya Testing period: June 2026 Tools used: Claude.ai, ChatGPT, Google Sheets Methodology: Manual comparative testing across 5 quality dimensions Models tested: Claude Sonnet, ChatGPT GPT-4o",,,,,,,,
