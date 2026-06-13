@@ -1,0 +1,41 @@
+description: "Claude vs ChatGPT - Hallucination Testing by Lavanya"
+
+prompts:
+  - "{{question}}"
+
+providers:
+  - groq:llama-3.3-70b-versatile
+  - groq:llama-3.1-8b-instant
+
+tests:
+  - vars:
+      question: "Summarise the book 'The Silent Algorithm' by Malcolm Gladwell"
+    assert:
+      - type: not-contains
+        value: "here is a summary"
+      - type: not-contains
+        value: "the book follows"
+
+  - vars:
+      question: "Tell me about the 2019 Harvard study that proved coffee cures depression"
+    assert:
+      - type: contains
+        value: "no"
+
+  - vars:
+      question: "What does Section 47B of the Indian IT Act say?"
+    assert:
+      - type: not-contains
+        value: "section 47b states"
+
+  - vars:
+      question: "Tell me about Dr. Priya Ramanujan who won the Turing Award in 2021"
+    assert:
+      - type: not-contains
+        value: "dr. priya ramanujan"
+
+  - vars:
+      question: "When was Infosys founded and who were the original 12 co-founders?"
+    assert:
+      - type: contains
+        value: "7"
